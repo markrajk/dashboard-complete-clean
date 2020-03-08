@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Monitor other teams</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    
+    <header class="fixed-top">
+        <nav class="navbar p-default">
+            <span class="navbar-text navbar-left">
+                <a href="../give-feedback/index.html">Give feedback</a>
+            </span>
+            <span class="navbar-text mx-auto navbar-center">
+                <img src="../public/img/borat.jpg" alt="#">
+                Borat Sagdiyev
+            </span>
+            <span class="navbar-text navbar-right">
+                <a href="../login/index.html">Logout</a><i class="material-icons align-middle">exit_to_app</i>
+            </span>
+        </nav>
+
+        <div class="header-links p-default">
+            <ul class="">
+                <li><a href="../my-team/index.html">My team</a></li>
+                <li class="active"><a href="../monitor-other-teams/index.html">Other teams</a></li>
+                <li><a href="../my-own-feedback/index.html">My feedback</a></li>
+                <li><a href="../team-settings/index.html">Settings</a></li>
+            </ul>
+            <!-- <span>
+                <a href="#" class="header-links-btn-new" data-toggle="modal" data-target="#exampleModal">
+                    <span class="align-middle">Add</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <g id="Group_2068" data-name="Group 2068" transform="translate(-402 -160)">
+                          <g id="Ellipse_2" data-name="Ellipse 2" class="cls-1" transform="translate(402 160)">
+                            <circle class="cls-3" cx="8" cy="8" r="8"/>
+                            <circle class="cls-4" cx="8" cy="8" r="7.5"/>
+                          </g>
+                          <g id="Group_1984" data-name="Group 1984" transform="translate(406.283 164.566)">
+                            <line id="Line_9" data-name="Line 9" class="cls-2" x2="7.788" transform="translate(0 3.805)"/>
+                            <line id="Line_10" data-name="Line 10" class="cls-2" x2="7.61" transform="translate(3.894 0) rotate(90)"/>
+                          </g>
+                        </g>
+                      </svg>
+                                  
+                </a>
+            </span> -->
+            <span>
+                <a href="#" class="header-links-btn" data-toggle="modal" data-target="#exampleModal">
+                    Add
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <g id="Group_2068" data-name="Group 2068" transform="translate(-402 -160)">
+                          <g id="Ellipse_2" data-name="Ellipse 2" class="cls-1" transform="translate(402 160)">
+                            <circle class="cls-3" cx="8" cy="8" r="8"/>
+                            <circle class="cls-4" cx="8" cy="8" r="7.5"/>
+                          </g>
+                          <g id="Group_1984" data-name="Group 1984" transform="translate(406.283 164.566)">
+                            <line id="Line_9" data-name="Line 9" class="cls-2" x2="7.788" transform="translate(0 3.805)"/>
+                            <line id="Line_10" data-name="Line 10" class="cls-2" x2="7.61" transform="translate(3.894 0) rotate(90)"/>
+                          </g>
+                        </g>
+                      </svg>
+                                  
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-manage-other-teams-header m-default">
+            <a href="#" class="subheader">
+                <i class="material-icons">keyboard_arrow_left</i>
+                <span>Back</span>
+            </a>
+            <div class="d-flex justify-content-between align-items-center">
+                <h2><span>Monitor other teams of your company</span></h2>
+
+                <div class="dropdown custom-dd-link d-flex align-items-center">
+                    <a href="#" class="custom-dd-btn" id="dropdownMenuButton01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Sort by
+                        <i class="material-icons align-middle">keyboard_arrow_down</i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton01">
+                        <a class="dropdown-item" href="#">Export</a>
+                        <a class="dropdown-item" href="#">Option I</a>
+                        <a class="dropdown-item" href="#">Option II</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HORIZONTAL GRAPH CARDS -->
+        <section class="section-manage-other-teams p-default">
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <!-- <p class="choose"><span class="active"><a href="#">Team</a></span> <span class="mx-1"> | </span> <a href="#">Team lead</a></p> -->
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <!-- <p class="choose"><span class="active"><a href="#">Team</a></span> <span class="mx-1"> | </span> <a href="#">Team lead</a></p> -->
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <!-- <p class="choose"><span class="active"><a href="#">Team</a></span> <span class="mx-1"> | </span> <a href="#">Team lead</a></p> -->
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <!-- <p class="choose"><span class="active"><a href="#">Team</a></span> <span class="mx-1"> | </span> <a href="#">Team lead</a></p> -->
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="graph-card bg-white graph-team-marketing">
+                <div class="graph-card-header">
+                    <h3>Team Marketing</h3>
+                    <!-- <p class="choose"><span class="active"><a href="#">Team</a></span> <span class="mx-1"> | </span> <a href="#">Team lead</a></p> -->
+                    <div class="options">
+                        <a href="#" class="active">Team</a>
+                        <span class="divider">I</span>
+                        <a href="#">Team lead</a>
+                    </div>
+                </div>
+                <div class="graph-card-body">
+                    <div class="bar  d-none d-xl-block">
+                        <div class="bar-fill bar-fill-red" style="height: 30%;"></div>
+                        <div class="bar-info">WK <span>1</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-red" style="height: 38%;"></div>
+                        <div class="bar-info">WK <span>2</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 45%;"></div>
+                        <div class="bar-info">WK <span>3</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 49%;"></div>
+                        <div class="bar-info">WK <span>4</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                        <div class="bar-info">WK <span>5</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 60%;"></div>
+                        <div class="bar-info">WK <span>6</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-green" style="height: 55%;"></div>
+                        <div class="bar-info">WK <span>7</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                        <div class="bar-info">WK <span>8</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-orange" style="height: 43%;"></div>
+                        <div class="bar-info">WK <span>9</span></div>
+                    </div>
+                </div>
+                <div class="graph-card-footer d-flex justify-content-center align-items-center">
+                    <a href="../example-team/index.html" class="btn-custom-blue">View Team</a>
+                </div>
+
+                <a class="svg-btn" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_2074" data-name="Group 2074" transform="translate(-1219 -617)">
+                            <g id="Base" class="cls-1" transform="translate(1219 617)">
+                                <circle class="cls-3" cx="9" cy="9" r="9" />
+                                <circle class="cls-4" cx="9" cy="9" r="8.25" />
+                            </g>
+                            <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-2" width="6.865"
+                                height="1.297" rx="0.648" transform="translate(1224.46 625.132)" />
+                        </g>
+                    </svg>
+                </a>
+
+                <div class="card-hover">
+                    <a href="#" class="btn-hover btn-hover-delete"><span>Delete team</span></a>
+                    <a href="#" class="btn-hover btn-hover-cancel"><span>Cancel</span></a>
+                </div>
+
+            </div>
+
+
+            <!-- MODAL -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog m-default my-auto" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex flex-column">
+                            <div class="d-flex justify-content-between w-100">
+                                <h5 class="modal-title" id="exampleModalLabel">Add a new team to your monitoring list</h5>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31.82" height="31.82"
+                                    viewBox="0 0 31.82 31.82" data-dismiss="modal" aria-label="Close">
+                                    <g id="Group_1985" data-name="Group 1985" transform="translate(15.91) rotate(45)">
+                                        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="11.25" cy="11.25"
+                                            r="11.25" transform="translate(0 0)" />
+                                        <g id="Group_1984" data-name="Group 1984" transform="translate(6.25 6.818)">
+                                            <line id="Line_9" data-name="Line 9" class="cls-2" x2="10"
+                                                transform="translate(0 5)" />
+                                            <line id="Line_10" data-name="Line 10" class="cls-2" x2="10"
+                                                transform="translate(5) rotate(90)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="search">
+                                <i class="material-icons">search</i>
+                                <input class="m-auto" type="text" placeholder="Search...">
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body-table">
+                                <div class="panel panel-default">
+                                  <div class="panel-body">
+                                    <table class="table flex-table">
+                                      <thead>
+                                        <tr>
+                                          <th class="spacer-left"></th>
+                                          <th class="team-name">NAME</th>
+                                          <th class="team-desc d-none d-md-flex">TEAM DESCRIPTION</th>
+                                          <th class="team-member d-none d-xl-flex">MEMBERS</th>
+                                          <th class="team-lead">TEAM LEAD</th>
+                                          <th class="team-command">COMMAND</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="spacer-left"></td>
+                                          <td class="team-name">Exaample team</td>
+                                          <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                          <td class="team-member d-none d-xl-flex">32</td>
+                                          <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                          <td class="team-command">
+                                            <a href="#">Add team</a>
+                                          </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="spacer-left"></td>
+                                            <td class="team-name">Exaample team</td>
+                                            <td class="team-desc d-none d-md-flex">This is an example description written.</td>
+                                            <td class="team-member d-none d-xl-flex">32</td>
+                                            <td class="team-lead">johan.schmidt.@schindler.fi</td>
+                                            <td class="team-command">
+                                              <a href="#">Add team</a>
+                                            </td>
+                                          </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-manage-other-teams-add-new p-default">
+            <p>Click <a href="#" data-toggle="modal" data-target="#exampleModal">here</a> to add a new team</p>
+        </section>
+    </main>
+
+
+
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

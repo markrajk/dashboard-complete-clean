@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Sign in | Check your email</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    
+    <header class="sign-in-header">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="../public/img/logo.png" alt="#">
+                <h1>Gipsy</h1>
+            </div>
+
+            <a href="../sign-in-get-started/index.html" class="btn-custom-sign-in-header"><span>Sign in</span></a>
+        </nav>
+    </header>
+
+    <section class="section-sign-in-check-email">
+        <div class="section-sign-in-check-email-card">
+            <h2>Check your email!</h2>
+            <p class="sub-text">
+                We’ve sent a 6-digit confirmation code
+                to <span class="email">maxmatinpalo@me.com</span>. Please enter it below.
+            </p>
+           
+            <div class="input-container">
+                <div class="left">
+                    <input type="text" class="i i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="1"/>
+                    <input type="text" class="i i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="2"/>
+                    <input type="text" class="i i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="3"/>
+                </div>
+                <span class="spacer"></span>
+                <div class="right">
+                    <input type="text" class="i i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="4"/>
+                    <input type="text" class="i i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="5"/>
+                    <input type="text" class="i i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="6"/>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="../public/img/sign-in-img-02.png" alt="#">
+            </div>
+        </div>
+    </section>
+
+    <footer class="sign-in-footer">
+        <p>Copyright © 2020 Palautejärjestelmä Oy</p>
+        <div class="options">
+            <a href="#" class="active">Privacy Policy</a>
+            <span class="divider">I</span>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+
+        // TEMOPORARY JAVASCRIPT TO GET YOU TO NEXT PAGE
+    
+        let inputs = [...document.querySelectorAll('.i')];
+
+        inputs[0].focus();
+
+        inputs.forEach((e, i, arr) => {
+            e.addEventListener("input", () => {
+                if(inputs.every(e => e.value)) {
+                    window.location.href = "../sign-in-create-team-03";
+                }
+
+                if(e.value) arr[i+1].focus()
+            })
+        })
+    </script>
+</body>
+</html>
